@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>25 + 5 Clock</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css"> <!-- Your custom styles can go here -->
+    <style>
+        body {
+            background-color: #333; /* Dark background color */
+            color: #fff; /* Light text color */
+        }
+
+        .container {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        h1, h2 {
+            color: #fff; /* Light text color */
+        }
+
+        .btn {
+            background-color: #007bff; /* Blue button color */
+            color: #fff; /* Light text color */
+        }
+
+        .btn:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+
+        #title {
+            font-size: 36px;
+        }
+
+        #timer-minutes, #timer-seconds {
+            font-size: 48px;
+        }
+
+        #play-button, #pause-button, #reset-button {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>25 + 5 Clock</h1>
+        <div class="row">
+            <div class="col">
+                <h2>Break Session Length</h2>
+                <button id="break-minus-element" class="btn">-</button>
+                <span id="break-session-element">5</span>
+                <button id="break-plus-element" class="btn">+</button>
+            </div>
+            <div class="col">
+                <h2>Session Length</h2>
+                <button id="session-minus-element" class="btn">-</button>
+                <span id="session-element">25</span>
+                <button id="session-plus-element" class="btn">+</button>
+            </div>
+        </div>
+
+        <h2 id="title">Session</h2>
+        <h2>
+            <span id="timer-minutes">25</span>:<span id="timer-seconds">00</span>
+        </h2>
+
+        <button id="play-button" class="btn">Play</button>
+        <button id="pause-button" class="btn">Pause</button>
+        <button id="reset-button" class="btn">Reset</button>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
